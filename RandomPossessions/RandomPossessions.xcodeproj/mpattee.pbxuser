@@ -1,0 +1,95 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 5C68C7EF12E77A1F0037A095 /* RandomPossessions */;
+		activeTarget = 8DD76F960486AA7600D96B5E /* RandomPossessions */;
+		addToTargets = (
+			8DD76F960486AA7600D96B5E /* RandomPossessions */,
+		);
+		codeSenseManager = 5C68C7F712E77A3E0037A095 /* Code sense */;
+		executables = (
+			5C68C7EF12E77A1F0037A095 /* RandomPossessions */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 317339531;
+			PBXWorkspaceStateSaveDate = 317339531;
+		};
+		sourceControlManager = 5C68C7F612E77A3E0037A095 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	08FB7796FE84155DC02AAC07 /* RandomPossessions.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 1214}}";
+			sepNavSelRange = "{261, 0}";
+			sepNavVisRange = "{0, 467}";
+			sepNavWindowFrame = "{{827, 91}, {1230, 1327}}";
+		};
+	};
+	5C68C7EF12E77A1F0037A095 /* RandomPossessions */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = RandomPossessions;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	5C68C7F612E77A3E0037A095 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	5C68C7F712E77A3E0037A095 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	5C68C80012E77D380037A095 /* Possession.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 1214}}";
+			sepNavSelRange = "{525, 23}";
+			sepNavVisRange = "{0, 709}";
+		};
+	};
+	5C68C80112E77D380037A095 /* Possession.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 1230}}";
+			sepNavSelRange = "{485, 0}";
+			sepNavVisRange = "{0, 2822}";
+			sepNavWindowFrame = "{{830, 91}, {1230, 1327}}";
+		};
+	};
+	8DD76F960486AA7600D96B5E /* RandomPossessions */ = {
+		activeExec = 0;
+		executables = (
+			5C68C7EF12E77A1F0037A095 /* RandomPossessions */,
+		);
+	};
+}

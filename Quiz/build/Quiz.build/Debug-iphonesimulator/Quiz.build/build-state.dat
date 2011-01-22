@@ -1,0 +1,245 @@
+TQuiz
+v7
+r0
+t317157371.947091
+cCheck dependencies
+cProcessInfoPlistFile "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Info.plist" Quiz-Info.plist
+cCompileXIB "/Users/mpattee/Documents/source/iPhone Programming/Quiz/MainWindow.xib"
+cCpResource build/Debug-iphonesimulator/Quiz.app/Icon.png Icon.png
+cCpResource build/Debug-iphonesimulator/Quiz.app/Default.png Default.png
+cProcessPCH /var/folders/Nw/NwYcV9VkEGW3MqpRsDsrHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quiz_Prefix-anagkqzwrtctpagmxvtstpwdfnzd/Quiz_Prefix.pch.gch Quiz_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Quiz.build/Debug-iphonesimulator/Quiz.build/Objects-normal/i386/main.o "/Users/mpattee/Documents/source/iPhone Programming/Quiz/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Quiz.build/Debug-iphonesimulator/Quiz.build/Objects-normal/i386/QuizAppDelegate.o "/Users/mpattee/Documents/source/iPhone Programming/Quiz/Classes/QuizAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Quiz" normal i386
+cGenerateDSYMFile "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app.dSYM" "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Quiz"
+cTouch "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/Classes/QuizAppDelegate.h
+c000000004D373419000000000000024F
+t1295463449
+s591
+i<UIKit/UIKit.h>
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/Classes/QuizAppDelegate.m
+c000000004D3736170000000000000FDA
+t1295463959
+s4058
+i"QuizAppDelegate.h"
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/Default.png
+c000000004A71D16500000000000045B5
+t1248973157
+s17845
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/Icon.png
+c000000004A71D165000000000000072F
+t1248973157
+s1839
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/MainWindow.xib
+c000000004D3734410000000000007144
+t1295463489
+s28996
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/Quiz_Prefix.pch
+c000000004D37299000000000000000B1
+t1295460752
+s177
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app
+t1295464564
+s272
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app.dSYM
+t1295464268
+s102
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Default.png
+t1295464564
+s17845
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Icon.png
+t1295464266
+s1839
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Info.plist
+t1295464300
+s606
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/MainWindow.nib
+t1295464267
+s2439
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/PkgInfo
+t1295464300
+s8
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Quiz
+t1295464268
+s16696
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Objects-normal/i386/Quiz.LinkFileList
+c000000004D37374A0000000000000115
+t1295464266
+s277
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Objects-normal/i386/QuizAppDelegate.o
+t1295464268
+s54368
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Objects-normal/i386/main.o
+t1295464268
+s6336
+
+N/Users/mpattee/Documents/source/iPhone Programming/Quiz/main.m
+c000000004D3729900000000000000167
+t1295460752
+s359
+i<UIKit/UIKit.h>
+
+N/var/folders/Nw/NwYcV9VkEGW3MqpRsDsrHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quiz_Prefix-anagkqzwrtctpagmxvtstpwdfnzd/Quiz_Prefix.pch.gch
+t1295464268
+s15453392
+
+NQuiz-Info.plist
+c000000004D37376B00000000000003B4
+t1295464299
+s948
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies317157371#317157371#0(0"0(0#1#0"8621462400#0"0#
+
+CCompileC build/Quiz.build/Debug-iphonesimulator/Quiz.build/Objects-normal/i386/QuizAppDelegate.o "/Users/mpattee/Documents/source/iPhone Programming/Quiz/Classes/QuizAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s317157068.202778
+e317157068.342665
+r1
+xCompileC
+xbuild/Quiz.build/Debug-iphonesimulator/Quiz.build/Objects-normal/i386/QuizAppDelegate.o
+x/Users/mpattee/Documents/source/iPhone Programming/Quiz/Classes/QuizAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/mpattee/Documents/source/iPhone Programming/Quiz/Classes/QuizAppDelegate.m317157068#317157068#0(0"0(0#0#81"/Users/mpattee/Documents/source/iPhone Programming/Quiz/Classes/QuizAppDelegate.m8602333152#2093"    cd "/Users/mpattee/Documents/source/iPhone Programming/Quiz"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Quiz-generated-files.hmap" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Quiz-own-target-headers.hmap" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Quiz-all-target-headers.hmap" -iquote "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Quiz-project-headers.hmap" "-F/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/include" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/DerivedSources/i386" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/DerivedSources" -include /var/folders/Nw/NwYcV9VkEGW3MqpRsDsrHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quiz_Prefix-anagkqzwrtctpagmxvtstpwdfnzd/Quiz_Prefix.pch -c "/Users/mpattee/Documents/source/iPhone Programming/Quiz/Classes/QuizAppDelegate.m" -o "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Objects-normal/i386/QuizAppDelegate.o"0#
+
+CCompileC build/Quiz.build/Debug-iphonesimulator/Quiz.build/Objects-normal/i386/main.o "/Users/mpattee/Documents/source/iPhone Programming/Quiz/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s317157068.201960
+e317157068.242219
+r1
+xCompileC
+xbuild/Quiz.build/Debug-iphonesimulator/Quiz.build/Objects-normal/i386/main.o
+x/Users/mpattee/Documents/source/iPhone Programming/Quiz/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/mpattee/Documents/source/iPhone Programming/Quiz/main.m317157068#317157068#0(0"0(0#0#62"/Users/mpattee/Documents/source/iPhone Programming/Quiz/main.m8621875072#2063"    cd "/Users/mpattee/Documents/source/iPhone Programming/Quiz"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Quiz-generated-files.hmap" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Quiz-own-target-headers.hmap" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Quiz-all-target-headers.hmap" -iquote "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Quiz-project-headers.hmap" "-F/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/include" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/DerivedSources/i386" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/DerivedSources" -include /var/folders/Nw/NwYcV9VkEGW3MqpRsDsrHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quiz_Prefix-anagkqzwrtctpagmxvtstpwdfnzd/Quiz_Prefix.pch -c "/Users/mpattee/Documents/source/iPhone Programming/Quiz/main.m" -o "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB "/Users/mpattee/Documents/source/iPhone Programming/Quiz/MainWindow.xib"
+s317157066.338133
+e317157067.039761
+r1
+xCompileXIB
+x/Users/mpattee/Documents/source/iPhone Programming/Quiz/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib317157066#317157067#0(0"0(0#0#70"/Users/mpattee/Documents/source/iPhone Programming/Quiz/MainWindow.xib8595786944#624"    cd "/Users/mpattee/Documents/source/iPhone Programming/Quiz"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/MainWindow.nib" "/Users/mpattee/Documents/source/iPhone Programming/Quiz/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCpResource build/Debug-iphonesimulator/Quiz.app/Default.png Default.png
+s317157364.522412
+e317157364.544956
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Quiz.app/Default.png
+xDefault.png
+lSLF07#2@16"Copy Default.png317157364#317157364#0(0"0(0#0#67"/Users/mpattee/Documents/source/iPhone Programming/Quiz/Default.png8623151360#523"    cd "/Users/mpattee/Documents/source/iPhone Programming/Quiz"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/mpattee/Documents/source/iPhone Programming/Quiz/Default.png" "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app"0#
+
+CCpResource build/Debug-iphonesimulator/Quiz.app/Icon.png Icon.png
+s317157066.338687
+e317157066.342973
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Quiz.app/Icon.png
+xIcon.png
+lSLF07#2@13"Copy Icon.png317157066#317157066#0(0"0(0#0#64"/Users/mpattee/Documents/source/iPhone Programming/Quiz/Icon.png8618494816#520"    cd "/Users/mpattee/Documents/source/iPhone Programming/Quiz"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/mpattee/Documents/source/iPhone Programming/Quiz/Icon.png" "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app"0#
+
+CGenerateDSYMFile "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app.dSYM" "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Quiz"
+s317157068.392218
+e317157068.404367
+r1
+xGenerateDSYMFile
+x/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app.dSYM
+x/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Quiz
+lSLF07#2@100"GenerateDSYMFile build/Debug-iphonesimulator/Quiz.app.dSYM build/Debug-iphonesimulator/Quiz.app/Quiz317157068#317157068#0(0"0(0#0#97"/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Quiz8621625248#431"    cd "/Users/mpattee/Documents/source/iPhone Programming/Quiz"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Quiz" -o "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app.dSYM"0#
+
+CLd "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Quiz" normal i386
+s317157068.342737
+e317157068.392139
+r1
+xLd
+x/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Quiz
+xnormal
+xi386
+lSLF07#2@102"Link /Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Quiz317157068#317157068#0(0"0(0#0#0"8621961536#980"    cd "/Users/mpattee/Documents/source/iPhone Programming/Quiz"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk "-L/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator" "-F/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator" -filelist "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Objects-normal/i386/Quiz.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Quiz"0#
+
+CProcessInfoPlistFile "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Info.plist" Quiz-Info.plist
+s317157100.316027
+e317157100.318872
+r1
+xProcessInfoPlistFile
+x/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Info.plist
+xQuiz-Info.plist
+lSLF07#2@23"Process Quiz-Info.plist317157100#317157100#0(0"0(0#0#71"/Users/mpattee/Documents/source/iPhone Programming/Quiz/Quiz-Info.plist8610528160#527"    cd "/Users/mpattee/Documents/source/iPhone Programming/Quiz"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Quiz-Info.plist -genpkginfo "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app/Info.plist"0#
+
+CProcessPCH /var/folders/Nw/NwYcV9VkEGW3MqpRsDsrHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quiz_Prefix-anagkqzwrtctpagmxvtstpwdfnzd/Quiz_Prefix.pch.gch Quiz_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s317157067.039856
+e317157068.201845
+r1
+xProcessPCH
+x/var/folders/Nw/NwYcV9VkEGW3MqpRsDsrHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quiz_Prefix-anagkqzwrtctpagmxvtstpwdfnzd/Quiz_Prefix.pch.gch
+xQuiz_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@26"Precompile Quiz_Prefix.pch317157067#317157068#0(0"0(0#0#71"/Users/mpattee/Documents/source/iPhone Programming/Quiz/Quiz_Prefix.pch8623078272#1939"    cd "/Users/mpattee/Documents/source/iPhone Programming/Quiz"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Quiz-generated-files.hmap" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Quiz-own-target-headers.hmap" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Quiz-all-target-headers.hmap" -iquote "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/Quiz-project-headers.hmap" "-F/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/include" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/DerivedSources/i386" "-I/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Quiz.build/Debug-iphonesimulator/Quiz.build/DerivedSources" -c "/Users/mpattee/Documents/source/iPhone Programming/Quiz/Quiz_Prefix.pch" -o /var/folders/Nw/NwYcV9VkEGW3MqpRsDsrHk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quiz_Prefix-anagkqzwrtctpagmxvtstpwdfnzd/Quiz_Prefix.pch.gch0#
+
+CTouch "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app"
+s317157364.545391
+e317157364.547352
+r1
+xTouch
+x/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app
+lSLF07#2@98"Touch /Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app317157364#317157364#0(0"0(0#0#0"8623242688#313"    cd "/Users/mpattee/Documents/source/iPhone Programming/Quiz"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/mpattee/Documents/source/iPhone Programming/Quiz/build/Debug-iphonesimulator/Quiz.app"0#
+

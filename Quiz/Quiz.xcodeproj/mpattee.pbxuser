@@ -1,0 +1,90 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* QuizAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 1214}}";
+			sepNavSelRange = "{583, 0}";
+			sepNavVisRange = "{0, 591}";
+		};
+	};
+	1D3623250D0F684500981E51 /* QuizAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 2175}}";
+			sepNavSelRange = "{1200, 0}";
+			sepNavVisRange = "{0, 2063}";
+			sepNavWindowFrame = "{{1030, 91}, {1230, 1327}}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Quiz */ = {
+		activeExec = 0;
+		executables = (
+			5C68C6AF12E761100037A095 /* Quiz */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 5C68C6AF12E761100037A095 /* Quiz */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Quiz */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Quiz */,
+		);
+		codeSenseManager = 5C68C6BA12E761120037A095 /* Code sense */;
+		executables = (
+			5C68C6AF12E761100037A095 /* Quiz */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 317153552;
+			PBXWorkspaceStateSaveDate = 317153552;
+		};
+		sourceControlManager = 5C68C6B912E761120037A095 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	5C68C6AF12E761100037A095 /* Quiz */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Quiz;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	5C68C6B912E761120037A095 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	5C68C6BA12E761120037A095 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8D1107310486CEB800E47090 /* Quiz-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 91}, {1230, 1327}}";
+		};
+	};
+}
