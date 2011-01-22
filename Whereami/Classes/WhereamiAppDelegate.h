@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface WhereamiAppDelegate : NSObject <UIApplicationDelegate, CLLocationManagerDelegate> {
+@interface WhereamiAppDelegate : NSObject <UIApplicationDelegate, CLLocationManagerDelegate, MKMapViewDelegate> {
     UIWindow *window;
+	
 	CLLocationManager *locationManager;
+	
+	IBOutlet MKMapView *_mapView;
+	IBOutlet UIActivityIndicatorView *activityIndicator;
+	IBOutlet UITextField *locationTitleField;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

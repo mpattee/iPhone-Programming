@@ -35,8 +35,9 @@
 	[locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
 	
 	// Tell our manager to start looking for its location immediately
-	[locationManager startUpdatingHeading];
-	[locationManager startUpdatingLocation];
+//	[locationManager startUpdatingHeading];
+//	[locationManager startUpdatingLocation];
+//	[mapView setShowsUserLocation:YES];
     
     [self.window makeKeyAndVisible];
     
@@ -105,7 +106,29 @@
 	{
 	NSLog(@"Heading: %@", newHeading);
 	}
+	
+- (void)mapView:(MKMapView *)mapView didFailToLocateUserWithError:(NSError *)error
+	{
+	NSLog(@"Could not find location: %@", error);
+	}
+	
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+	{
+	NSLog(@"User Location: %@", userLocation);
+	MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 250, 250);
+	[mapView setRegion:region animated:YES];
+	}
+	
 
+
+- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views
+	{
+	NSLog(@"did add annotation");
+	MKAnnotationView *annotationView = [[views objectAtIndex:0] annotation];
+	id <MKAnnotation> mp = [annotationView annotation];
+	MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([mp coordinate], 250, 250);
+	[mapView setRegion:region animated:YES];
+	}
 
 - (void)dealloc {
 	[locationManager setDelegate:nil];

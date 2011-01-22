@@ -15,6 +15,7 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		5C68D02E12EA50B90037A095 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C68D02D12EA50B90037A095 /* CoreLocation.framework */; };
 		5C68D04B12EA56460037A095 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C68D04A12EA56460037A095 /* MapKit.framework */; };
+		5C68D08F12EA6F1D0037A095 /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C68D08E12EA6F1D0037A095 /* MapPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		32CA4F630368D1EE00C91783 /* Whereami_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Whereami_Prefix.pch; sourceTree = "<group>"; };
 		5C68D02D12EA50B90037A095 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5C68D04A12EA56460037A095 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5C68D08D12EA6F1D0037A095 /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		5C68D08E12EA6F1D0037A095 /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Whereami-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Whereami-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +54,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5C68D08D12EA6F1D0037A095 /* MapPoint.h */,
+				5C68D08E12EA6F1D0037A095 /* MapPoint.m */,
 				1D3623240D0F684500981E51 /* WhereamiAppDelegate.h */,
 				1D3623250D0F684500981E51 /* WhereamiAppDelegate.m */,
 			);
@@ -169,6 +174,7 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* WhereamiAppDelegate.m in Sources */,
+				5C68D08F12EA6F1D0037A095 /* MapPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
