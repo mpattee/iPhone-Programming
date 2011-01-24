@@ -7,6 +7,7 @@
 //
 
 #import "WhereamiAppDelegate.h"
+#import "MapPoint.h"
 
 @implementation WhereamiAppDelegate
 
@@ -92,9 +93,38 @@
      */
 }
 
+- (void)findLocation
+	{
+	NSLog(@"findLocation");
+	[locationManager startUpdatingLocation];
+	[activityIndicator startAnimating];
+	[locationTitleField setHidden:YES];
+	}
+	
+- (void)foundLocation
+	{
+	NSLog(@"foundLocation");
+	[locationTitleField setText:@""];
+	[activityIndicator stopAnimating];
+	[locationTitleField setHidden:NO];
+	[locationManager stopUpdatingLocation];
+	}
+
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 	{
 	NSLog(@"%@", newLocation);
+	NSTimeInterval time = [[newLocation timestamp] timeIntervalSinceNow];
+	// CLLocationManagers will return the last found location of the device first, you don't want that data in this case. If this location was made more than 3 minutes ago, ignore it.
+	if (time < -180)
+		{
+		// this is cached data, you don't want it, keep looking
+		return;
+		}
+	MapPoint *mp = [[MapPoint alloc] initWithCoordinate:[newLocation coordinate] title:[locationTitleField text]];
+	[_mapView addAnnotation:mp];
+	[mp release];
+	
+	[self foundLocation];
 	}
 	
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
@@ -136,6 +166,13 @@
     [window release];
     [super dealloc];
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)inTextField
+	{
+	[self findLocation];
+	[inTextField resignFirstResponder];
+	return YES;
+	}
 
 
 @end
