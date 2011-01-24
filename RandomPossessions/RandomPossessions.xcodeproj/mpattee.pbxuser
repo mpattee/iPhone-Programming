@@ -15,6 +15,12 @@
 			PBXPerProjectTemplateStateSaveDate = 317339531;
 			PBXWorkspaceStateSaveDate = 317339531;
 		};
+		perUserProjectItems = {
+			5C68D00E12EA37B70037A095 /* PBXBookmark */ = 5C68D00E12EA37B70037A095 /* PBXBookmark */;
+			5C68D00F12EA38260037A095 /* PBXBookmark */ = 5C68D00F12EA38260037A095 /* PBXBookmark */;
+			5C68D10E12EE02D50037A095 /* PBXTextBookmark */ = 5C68D10E12EE02D50037A095 /* PBXTextBookmark */;
+			5C68D11112EE02D50037A095 /* PBXTextBookmark */ = 5C68D11112EE02D50037A095 /* PBXTextBookmark */;
+		};
 		sourceControlManager = 5C68C7F612E77A3E0037A095 /* Source Control */;
 		userBuildSettings = {
 		};
@@ -22,8 +28,8 @@
 	08FB7796FE84155DC02AAC07 /* RandomPossessions.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1171, 1214}}";
-			sepNavSelRange = "{261, 0}";
-			sepNavVisRange = "{0, 467}";
+			sepNavSelRange = "{464, 0}";
+			sepNavVisRange = "{0, 496}";
 			sepNavWindowFrame = "{{827, 91}, {1230, 1327}}";
 		};
 	};
@@ -80,11 +86,39 @@
 	};
 	5C68C80112E77D380037A095 /* Possession.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 1230}}";
-			sepNavSelRange = "{485, 0}";
-			sepNavVisRange = "{0, 2822}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 1320}}";
+			sepNavSelRange = "{389, 0}";
+			sepNavVisRange = "{0, 2751}";
 			sepNavWindowFrame = "{{830, 91}, {1230, 1327}}";
 		};
+	};
+	5C68D00E12EA37B70037A095 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* RandomPossessions.m */;
+	};
+	5C68D00F12EA38260037A095 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 5C68C80112E77D380037A095 /* Possession.m */;
+	};
+	5C68D10E12EE02D50037A095 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5C68C80112E77D380037A095 /* Possession.m */;
+		name = "Possession.m: 22";
+		rLen = 0;
+		rLoc = 389;
+		rType = 0;
+		vrLen = 2751;
+		vrLoc = 0;
+	};
+	5C68D11112EE02D50037A095 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* RandomPossessions.m */;
+		name = "RandomPossessions.m: 20";
+		rLen = 0;
+		rLoc = 464;
+		rType = 0;
+		vrLen = 496;
+		vrLoc = 0;
 	};
 	8DD76F960486AA7600D96B5E /* RandomPossessions */ = {
 		activeExec = 0;

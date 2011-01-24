@@ -154,7 +154,7 @@
 - (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views
 	{
 	NSLog(@"did add annotation");
-	MKAnnotationView *annotationView = [[views objectAtIndex:0] annotation];
+	MKAnnotationView *annotationView = [views objectAtIndex:0];
 	id <MKAnnotation> mp = [annotationView annotation];
 	MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([mp coordinate], 250, 250);
 	[mapView setRegion:region animated:YES];
