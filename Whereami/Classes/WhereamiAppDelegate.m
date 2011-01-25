@@ -120,11 +120,9 @@
 		// this is cached data, you don't want it, keep looking
 		return;
 		}
-	MapPoint *mp = [[MapPoint alloc] initWithCoordinate:[newLocation coordinate] title:[locationTitleField text]];
-	[_mapView addAnnotation:mp];
-	[mp release];
-	
-	[self foundLocation];
+	MKReverseGeocoder *reverseGeocoder = [[MKReverseGeocoder alloc] initWithCoordinate:[newLocation coordinate]];
+	[reverseGeocoder setDelegate:self];
+	[reverseGeocoder start];
 	}
 	
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
@@ -174,5 +172,50 @@
 	return YES;
 	}
 
+- (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFailWithError:(NSError *)error
+	{
+	NSLog(@"Unable to reverse the geocode: %@", error);
+	}
+	
+- (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFindPlacemark:(MKPlacemark *)placemark
+	{
+	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+	[dateFormatter setDateStyle:NSDateFormatterShortStyle];
+	NSString *annotationTitle = [NSString stringWithFormat:@"%@ - %@", [locationTitleField text], [dateFormatter stringFromDate:[NSDate date]]];
+	[dateFormatter release];
+	NSLog(@"%@", [placemark addressDictionary]);
+	MapPoint *mp = [[MapPoint alloc] initWithCoordinate:[geocoder coordinate] title:annotationTitle];
+	[_mapView addAnnotation:mp];
+	[mp release];
+	
+	[self foundLocation];
+	
+	}
+	
+- (IBAction)mapTypeChanged
+	{
+	switch (mapTypeSegmentedControl.selectedSegmentIndex)
+		{
+		case 0:
+			{
+			[_mapView setMapType:MKMapTypeStandard];
+			}
+			break;
+		case 1:
+			{
+			[_mapView setMapType:MKMapTypeSatellite];
+			}
+			break;
+		case 2:
+			{
+			[_mapView setMapType:MKMapTypeHybrid];
+			}
+			break;
+		default:
+			{
+			}
+			break;
+		}
+	}
 
 @end

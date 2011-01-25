@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-@interface WhereamiAppDelegate : NSObject <UIApplicationDelegate, CLLocationManagerDelegate, MKMapViewDelegate> {
+@interface WhereamiAppDelegate : NSObject <UIApplicationDelegate, CLLocationManagerDelegate, MKMapViewDelegate, MKReverseGeocoderDelegate> {
     UIWindow *window;
 	
 	CLLocationManager *locationManager;
@@ -18,12 +18,15 @@
 	IBOutlet MKMapView *_mapView;
 	IBOutlet UIActivityIndicatorView *activityIndicator;
 	IBOutlet UITextField *locationTitleField;
+	IBOutlet UISegmentedControl *mapTypeSegmentedControl;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
 - (void)findLocation;
 - (void)foundLocation;
+
+- (IBAction)mapTypeChanged;
 
 @end
 

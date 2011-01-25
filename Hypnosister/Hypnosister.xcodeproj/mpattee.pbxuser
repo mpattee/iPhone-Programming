@@ -1,0 +1,140 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* HypnosisterAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1042, 1214}}";
+			sepNavSelRange = "{290, 0}";
+			sepNavVisRange = "{0, 404}";
+		};
+	};
+	1D3623250D0F684500981E51 /* HypnosisterAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1301, 1665}}";
+			sepNavSelRange = "{3647, 0}";
+			sepNavVisRange = "{215, 2926}";
+			sepNavWindowFrame = "{{15, 91}, {1360, 1327}}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Hypnosister */ = {
+		activeExec = 0;
+		executables = (
+			5C68D19F12EE2ED60037A095 /* Hypnosister */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 5C68D19F12EE2ED60037A095 /* Hypnosister */;
+		activeSDKPreference = iphonesimulator4.2;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Hypnosister */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Hypnosister */,
+		);
+		codeSenseManager = 5C68D1AA12EE2EDC0037A095 /* Code sense */;
+		executables = (
+			5C68D19F12EE2ED60037A095 /* Hypnosister */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 317599446;
+			PBXWorkspaceStateSaveDate = 317599446;
+		};
+		perUserProjectItems = {
+			5C68D1BA12EE31EE0037A095 /* PBXTextBookmark */ = 5C68D1BA12EE31EE0037A095 /* PBXTextBookmark */;
+			5C68D1BB12EE31EE0037A095 /* PBXTextBookmark */ = 5C68D1BB12EE31EE0037A095 /* PBXTextBookmark */;
+			5C68D24712EE4F680037A095 /* PBXTextBookmark */ = 5C68D24712EE4F680037A095 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 5C68D1A912EE2EDC0037A095 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	5C68D19F12EE2ED60037A095 /* Hypnosister */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Hypnosister;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	5C68D1A912EE2EDC0037A095 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	5C68D1AA12EE2EDC0037A095 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	5C68D1AB12EE2F060037A095 /* HypnosisView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1301, 1214}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 215}";
+		};
+	};
+	5C68D1AC12EE2F060037A095 /* HypnosisView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1301, 1320}}";
+			sepNavSelRange = "{1400, 0}";
+			sepNavVisRange = "{80, 2112}";
+			sepNavWindowFrame = "{{51, 91}, {1360, 1327}}";
+		};
+	};
+	5C68D1BA12EE31EE0037A095 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* HypnosisterAppDelegate.h */;
+		name = "HypnosisterAppDelegate.h: 10";
+		rLen = 0;
+		rLoc = 199;
+		rType = 0;
+		vrLen = 382;
+		vrLoc = 0;
+	};
+	5C68D1BB12EE31EE0037A095 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* HypnosisterAppDelegate.m */;
+		rLen = 0;
+		rLoc = 9223372036854776980;
+		rType = 0;
+	};
+	5C68D24712EE4F680037A095 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* HypnosisterAppDelegate.m */;
+		name = "HypnosisterAppDelegate.m: 112";
+		rLen = 0;
+		rLoc = 3647;
+		rType = 0;
+		vrLen = 2926;
+		vrLoc = 215;
+	};
+	8D1107310486CEB800E47090 /* Hypnosister-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 91}, {1101, 1327}}";
+		};
+	};
+}
