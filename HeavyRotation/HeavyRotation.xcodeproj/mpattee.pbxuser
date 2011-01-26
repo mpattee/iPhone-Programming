@@ -1,0 +1,119 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* HeavyRotationAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1042, 1214}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 346}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* HeavyRotation */ = {
+		activeExec = 0;
+		executables = (
+			5C27F53012EF4EDE00F97968 /* HeavyRotation */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 5C27F53012EF4EDE00F97968 /* HeavyRotation */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* HeavyRotation */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* HeavyRotation */,
+		);
+		codeSenseManager = 5C27F54912EF4EEB00F97968 /* Code sense */;
+		executables = (
+			5C27F53012EF4EDE00F97968 /* HeavyRotation */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 317673182;
+			PBXWorkspaceStateSaveDate = 317673182;
+		};
+		perUserProjectItems = {
+			5C27F54412EF4EEB00F97968 /* PBXTextBookmark */ = 5C27F54412EF4EEB00F97968 /* PBXTextBookmark */;
+			5C27F54612EF4EEB00F97968 /* PBXTextBookmark */ = 5C27F54612EF4EEB00F97968 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 5C27F54812EF4EEB00F97968 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	5C27F53012EF4EDE00F97968 /* HeavyRotation */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = HeavyRotation;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	5C27F54412EF4EEB00F97968 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5C27F54512EF4EEB00F97968 /* HeavyRotationAppDelegate.h */;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+		rType = 0;
+	};
+	5C27F54512EF4EEB00F97968 /* HeavyRotationAppDelegate.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = HeavyRotationAppDelegate.h;
+		path = "/Users/mpattee/Documents/source/iPhone Programming/HeavyRotation/Classes/HeavyRotationAppDelegate.h";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1042, 1214}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 346}";
+		};
+	};
+	5C27F54612EF4EEB00F97968 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* HeavyRotationAppDelegate.h */;
+		name = "HeavyRotationAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 0;
+	};
+	5C27F54812EF4EEB00F97968 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	5C27F54912EF4EEB00F97968 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	5C27F54E12EF500B00F97968 /* HeavyViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1042, 1214}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 241}";
+		};
+	};
+}

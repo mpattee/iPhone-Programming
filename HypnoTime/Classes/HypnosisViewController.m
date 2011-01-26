@@ -52,6 +52,25 @@
 //	[[self view] setBackgroundColor:[UIColor orangeColor]];
 	}
 
+- (void)viewWillAppear:(BOOL)animated
+	{
+	[super viewWillAppear:animated];
+	
+	NSLog(@"Monitoring accelerometer");
+	UIAccelerometer *a = [UIAccelerometer sharedAccelerometer];
+	// Recieve updates ever 1/10th of a second
+	[a setUpdateInterval:0.1];
+	[a setDelegate:self];
+	
+	[[self view] becomeFirstResponder];
+	}
+	
+- (void)viewWillDisappear:(BOOL)animated
+	{
+	[super viewWillDisappear:animated];
+	[[UIAccelerometer sharedAccelerometer] setDelegate:nil];
+	}
+
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -78,5 +97,21 @@
     [super dealloc];
 }
 
+
+- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
+	{
+//	NSLog(@"%f %f %f", [acceleration x], [acceleration y] ,[acceleration z]);
+	HypnosisView *hv = (HypnosisView *)[self view];
+	float xShift = [hv xShift] * 0.8 + [acceleration x] * 2.0;
+	float yShift = [hv yShift] * 0.8 + [acceleration y] * 2.0;
+	[hv setXShift:xShift];
+	[hv setYShift:yShift];
+	[hv setRed:([acceleration x] + 1) / 2];
+	[hv setGreen:([acceleration y] + 1) / 2];
+	[hv setBlue:([acceleration z] + 1) / 2];
+	
+	// Redraw the view
+	[hv setNeedsDisplay];
+	}
 
 @end

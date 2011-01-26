@@ -11,12 +11,19 @@
 
 @implementation HypnosisView
 
+@synthesize xShift;
+@synthesize yShift;
+@synthesize red;
+@synthesize green;
+@synthesize blue;
+
 
 - (id)initWithFrame:(CGRect)frame {
     
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code.
+		stripeColor = [[UIColor grayColor] retain];
     }
     return self;
 }
@@ -44,14 +51,18 @@
 	CGContextSetLineWidth(context, 10.0);
 	
 	// Set the stroke color to light gray
+//	[stripeColor setStroke];
+	[[UIColor colorWithRed:red green:green blue:blue alpha:1.0] setStroke];
 //	[[UIColor lightGrayColor] setStroke];
 	
 	// Draw concentric circles from the outside in
 	for (float currentRadius = maxRadius; currentRadius > 0; currentRadius -= 20)
 		{
+		center.x += xShift;
+		center.y += yShift;
 		CGContextAddArc(context, center.x, center.y, currentRadius, 0.0, M_PI * 2.0, YES);
 		
-		[[UIColor colorWithRed:.5 green:.5 blue:currentRadius/maxRadius alpha:1.0] setStroke];
+//		[[UIColor colorWithRed:.5 green:.5 blue:currentRadius/maxRadius alpha:1.0] setStroke];
 		CGContextStrokePath(context);
 		}
 	
@@ -77,11 +88,34 @@
 	// Draw the string
 	[text drawInRect:textRect withFont:font];
 	}
+	
+- (BOOL)canBecomeFirstResponder
+	{
+	return YES;
+	}
+	
+//- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+//	{
+//	// Shake is the only kind of motion for now, but we should (for future compatibility) check the motion type.
+//	if (motion == UIEventSubtypeMotionShake) 
+//		{
+//		NSLog(@"shake started");
+//		float r, g, b;
+//		r = random() % 256 / 256.0;
+//		g = random() % 256 / 256.0;
+//		b = random() % 256 / 256.0;
+//		[stripeColor release];
+//		stripeColor = [[UIColor colorWithRed:r green:g blue:b alpha:1.0] retain];
+//		[self setNeedsDisplay];
+//		}
+//	}
 
 
-- (void)dealloc {
+- (void)dealloc 
+	{
+	[stripeColor release];
     [super dealloc];
-}
+	}
 
 
 @end
