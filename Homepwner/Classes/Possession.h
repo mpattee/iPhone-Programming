@@ -9,18 +9,20 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Possession : NSObject 
+@interface Possession : NSObject <NSCoding>
 	{
 	NSString *possessionName;
 	NSString *serialNumber;
 	int valueInDollars;
 	NSDate *dateCreated;
+	NSString *imageKey;
 	}
 	
 @property (nonatomic, copy) NSString *possessionName;
 @property (nonatomic, copy) NSString *serialNumber;
 @property (nonatomic) int valueInDollars;
 @property (nonatomic, readonly) NSDate *dateCreated;
+@property (readwrite, nonatomic, retain) NSString *imageKey;
 
 + (id)randomPossession;
 

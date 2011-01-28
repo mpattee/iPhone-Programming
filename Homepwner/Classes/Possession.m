@@ -11,13 +11,14 @@
 
 @implementation Possession
 
-@synthesize possessionName, serialNumber, valueInDollars, dateCreated;
+@synthesize possessionName, serialNumber, valueInDollars, dateCreated, imageKey;
 
 - (void)dealloc
 	{
 	[possessionName release];
 	[serialNumber release];
 	[dateCreated release];
+	[imageKey release];
 	[super dealloc];
 	}
 
@@ -49,6 +50,31 @@
 - (id)init
 	{
 	return [self initWithPossessionName:@"Possession" valueInDollars:0 serialNumber:@""];
+	}
+	
+- (id)initWithCoder:(NSCoder *)aDecoder
+	{
+	[super init];
+	
+	// For each instance variable that is archived, we decode it, and pass it to our setters. (Where it is retained)
+	[self setPossessionName:[aDecoder decodeObjectForKey:@"possessionName"]];
+	[self setSerialNumber:[aDecoder decodeObjectForKey:@"serialNumber"]];
+	[self setValueInDollars:[aDecoder decodeIntForKey:@"valueInDollars"]];
+	[self setImageKey:[aDecoder decodeObjectForKey:@"imageKey"]];
+	
+	// dateCreated is read only, we have no setter. We explicitly retain it and set our instance variable pointer to it.
+	dateCreated = [[aDecoder decodeObjectForKey:@"dateCreated"] retain];
+	return self;
+	}
+	
+- (void)encodeWithCoder:(NSCoder *)aCoder
+	{
+	// for each instance variable, archive it under its variable name
+	[aCoder encodeObject:possessionName forKey:@"possessionName"];
+	[aCoder encodeObject:serialNumber forKey:@"serialNumber"];
+	[aCoder encodeInt:valueInDollars forKey:@"valueInDollars"];
+	[aCoder encodeObject:dateCreated forKey:@"dateCreated"];
+	[aCoder encodeObject:imageKey forKey:@"imageKey"];
 	}
 	
 + (id)randomPossession

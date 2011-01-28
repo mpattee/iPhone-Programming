@@ -13,6 +13,11 @@
 
 @synthesize window;
 
+- (NSString *)possessionArrayPath
+	{
+	return pathInDocumentDirectory(@"Posessions.data");
+	}
+
 #pragma mark -
 #pragma mark Application lifecycle
 
@@ -21,8 +26,14 @@
     // Create a ItemsViewController
 	itemsViewController = [[ItemsViewController alloc] init];
 	
+	// Create an instance of UInavigationController
+	// its stack contains only items viewcontroller
+	
+	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
+	
 	// Place ItemsViewController's table view in the window hierarchy
-	[window setRootViewController:itemsViewController];
+	[window setRootViewController:navController];
+	[navController release];
 	
 	// we won't release itemsViewController here, as we have an instance variable that points to it as well, and therefore, truly has two owners
 	

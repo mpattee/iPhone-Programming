@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class ItemDetailViewController;
 
 @interface ItemsViewController : UITableViewController 
 	{
-	UIView *headerView;
 	NSMutableArray *possessions;
+	ItemDetailViewController *detailViewController;
 	}
+@property (readwrite, nonatomic, retain) NSMutableArray *possessions;
 
 @end

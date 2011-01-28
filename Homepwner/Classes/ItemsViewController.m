@@ -7,9 +7,12 @@
 //
 
 #import "ItemsViewController.h"
+#import "ItemDetailViewController.h"
 #import "Possession.h"
 
 @implementation ItemsViewController
+
+@synthesize possessions;
 
 - (id)init
 	{
@@ -22,12 +25,25 @@
 		{
 		[possessions addObject:[Possession randomPossession]];
 		}
+		
+	// Set the nav bar to have the pre-fab'ed Edit button when ItemsViewController is on top of the stack
+	[[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
+	
+	// Set the title of the nav bar to Homepwner when ItemsViewController is on top of the stack
+	[[self navigationItem] setTitle:@"Homepwner"];
+	
 	return self;
 	}
 	
 - (id)initWithStyle:(UITableViewStyle)style
 	{
 	return [self init];
+	}
+	
+- (void)viewWillAppear:(BOOL)animated
+	{
+	[super viewWillAppear:YES];
+	[[self tableView] reloadData];
 	}
 
 - (void)didReceiveMemoryWarning {
@@ -89,47 +105,6 @@
 	return cell;
 	}
 	
-- (UIView *)headerView
-	{
-	if (headerView)
-		return headerView;
-		
-	// Create a UIButton object, simple rounded rect style
-	UIButton *editButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	
-	// Set the title of this button to "Edit"
-	[editButton setTitle:@"Edit" forState:UIControlStateNormal];
-	
-	// How wide is the screen
-	float w = [[UIScreen mainScreen] bounds].size.width;
-	
-	// Create a rectangle for the button
-	CGRect editButtonFrame = CGRectMake(8, 8, w - 16, 30);
-	[editButton setFrame:editButtonFrame];
-	
-	// When this button is tapped, send the message editingButtonPressed: to this instance of ItemsVIewController
-	[editButton addTarget:self action:@selector(editingButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-	
-	// Create a rectangle for the headerView that will contain the button
-	CGRect headerViewFrame = CGRectMake(0, 0, w, 48);
-	headerView = [[UIView alloc] initWithFrame:headerViewFrame];
-	
-	// Add button to the headerView's view hierarchy
-	[headerView addSubview:editButton];
-	
-	return headerView;
-	}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-	{
-	return [self headerView];
-	}
-	
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-	{
-	return [[self headerView] frame].size.height;
-	}
-	
 - (void)setEditing:(BOOL)editing animated:(BOOL)animate
 	{
 	// ALways call super implementation of this method, it needs to do work 
@@ -149,25 +124,6 @@
 		}
 	}
 	
-- (void)editingButtonPressed:(id)sender
-	{
-	// If we are currently in editing mode...
-	if ([self isEditing])
-		{
-		// Change text of button to inform user of state
-		[sender setTitle:@"Edit" forState:UIControlStateNormal];
-		// Turn off editing mode
-		[self setEditing:NO animated:YES];
-		}
-	else 
-		{
-		// Change text of button to inform user of state
-		[sender setTitle:@"Done" forState:UIControlStateNormal];
-		// Enter editing mode
-		[self setEditing:YES animated:YES];
-		}
-	}
-
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 	{
 	// If the table view is asking to commit a delete command...
@@ -243,6 +199,16 @@
 	// We get here if we are trying to move a row to under the "Add New Item..." row, have the moving row go one row above it instead.
 	NSIndexPath *betterIndexPath = [NSIndexPath indexPathForRow:[possessions count] - 1 inSection:0];
 	return betterIndexPath;
+	}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+	{
+	if (!detailViewController)
+		{
+		detailViewController = [[ItemDetailViewController alloc] init];
+		}
+	[detailViewController setEditingPossession:[possessions objectAtIndex:[indexPath row]]];
+	[[self navigationController] pushViewController:detailViewController animated:YES];
 	}
 
 			

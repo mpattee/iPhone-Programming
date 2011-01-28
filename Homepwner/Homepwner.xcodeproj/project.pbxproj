@@ -15,6 +15,10 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		5C27F57012EF796000F97968 /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C27F56F12EF796000F97968 /* ItemsViewController.m */; };
 		5C27F58812EF7B4200F97968 /* Possession.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C27F58712EF7B4200F97968 /* Possession.m */; };
+		5C27F5FF12F0981D00F97968 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C27F5FD12F0981D00F97968 /* ItemDetailViewController.m */; };
+		5C27F60012F0981D00F97968 /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C27F5FE12F0981D00F97968 /* ItemDetailViewController.xib */; };
+		5C27F64012F0CBD700F97968 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C27F63F12F0CBD700F97968 /* ImageCache.m */; };
+		5CB34F8D12F27F3A00E82043 /* FileHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB34F8C12F27F3A00E82043 /* FileHelpers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,13 @@
 		5C27F56F12EF796000F97968 /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
 		5C27F58612EF7B4200F97968 /* Possession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Possession.h; sourceTree = "<group>"; };
 		5C27F58712EF7B4200F97968 /* Possession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Possession.m; sourceTree = "<group>"; };
+		5C27F5FC12F0981D00F97968 /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		5C27F5FD12F0981D00F97968 /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
+		5C27F5FE12F0981D00F97968 /* ItemDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
+		5C27F63E12F0CBD700F97968 /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
+		5C27F63F12F0CBD700F97968 /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
+		5CB34F8B12F27F3A00E82043 /* FileHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHelpers.h; sourceTree = "<group>"; };
+		5CB34F8C12F27F3A00E82043 /* FileHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHelpers.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Homepwner-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Homepwner-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,12 +62,19 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5C27F5FC12F0981D00F97968 /* ItemDetailViewController.h */,
+				5C27F5FD12F0981D00F97968 /* ItemDetailViewController.m */,
+				5C27F5FE12F0981D00F97968 /* ItemDetailViewController.xib */,
 				5C27F58612EF7B4200F97968 /* Possession.h */,
 				5C27F58712EF7B4200F97968 /* Possession.m */,
 				1D3623240D0F684500981E51 /* HomepwnerAppDelegate.h */,
 				1D3623250D0F684500981E51 /* HomepwnerAppDelegate.m */,
 				5C27F56E12EF796000F97968 /* ItemsViewController.h */,
 				5C27F56F12EF796000F97968 /* ItemsViewController.m */,
+				5C27F63E12F0CBD700F97968 /* ImageCache.h */,
+				5C27F63F12F0CBD700F97968 /* ImageCache.m */,
+				5CB34F8B12F27F3A00E82043 /* FileHelpers.h */,
+				5CB34F8C12F27F3A00E82043 /* FileHelpers.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -159,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				5C27F60012F0981D00F97968 /* ItemDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +192,9 @@
 				1D3623260D0F684500981E51 /* HomepwnerAppDelegate.m in Sources */,
 				5C27F57012EF796000F97968 /* ItemsViewController.m in Sources */,
 				5C27F58812EF7B4200F97968 /* Possession.m in Sources */,
+				5C27F5FF12F0981D00F97968 /* ItemDetailViewController.m in Sources */,
+				5C27F64012F0CBD700F97968 /* ImageCache.m in Sources */,
+				5CB34F8D12F27F3A00E82043 /* FileHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

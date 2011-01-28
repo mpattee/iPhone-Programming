@@ -202,25 +202,25 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>5C68D28C12EE54D50037A095</string>
+				<string>5C27F6DA12F133B600F97968</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>HypnosisViewController.m</string>
+				<string>HypnosisView.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>5C68D28D12EE54D50037A095</string>
+						<string>5C27F6DB12F133B600F97968</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>HypnosisViewController.m</string>
+						<string>HypnosisView.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>5C27F4E912EF3B8700F97968</string>
+						<string>5CB34FBE12F2815300E82043</string>
 						<key>history</key>
 						<array>
-							<string>5C27F4E712EF3B8700F97968</string>
-							<string>5C27F4E812EF3B8700F97968</string>
+							<string>5C27F6DC12F133B600F97968</string>
+							<string>5CD8926012F2143E005BF40C</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -236,7 +236,7 @@
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>380 147 1101 1271 0 0 2560 1418 </string>
+				<string>15 147 1101 1271 0 0 2560 1418 </string>
 			</dict>
 		</dict>
 		<dict>
@@ -257,11 +257,11 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>5C27F4EA12EF3B8700F97968</string>
+						<string>5CB34FBF12F2815300E82043</string>
 						<key>history</key>
 						<array>
 							<string>5C68D2AE12EE56490037A095</string>
-							<string>5C68D30212EE8CD50037A095</string>
+							<string>5CD8926112F2143E005BF40C</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -298,11 +298,11 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>5C27F4EB12EF3B8700F97968</string>
+						<string>5CB34FC012F2815300E82043</string>
 						<key>history</key>
 						<array>
 							<string>5C68D28412EE54D50037A095</string>
-							<string>5C68D30312EE8CD50037A095</string>
+							<string>5CD8926212F2143E005BF40C</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -319,47 +319,6 @@
 				<false/>
 				<key>RubberWindowFrame</key>
 				<string>15 147 1101 1271 0 0 2560 1418 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>5C68D26712EE508B0037A095</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>HypnoTimeAppDelegate.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>5C68D26812EE508B0037A095</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>HypnoTimeAppDelegate.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>5C27F4EC12EF3B8700F97968</string>
-						<key>history</key>
-						<array>
-							<string>5C68D26912EE508B0037A095</string>
-							<string>5C68D30412EE8CD50037A095</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1101, 1230}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>322 147 1101 1271 0 0 2560 1418 </string>
 			</dict>
 		</dict>
 	</array>
@@ -608,8 +567,8 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>5C27F4D512EF3A5700F97968</string>
-				<string>5C27F4D612EF3A5700F97968</string>
+				<string>5CB34F5112F21F6400E82043</string>
+				<string>5CB34F5212F21F6400E82043</string>
 				<string>1C9437FD063B20B00039CFAC</string>
 				<string>1C9437FE063B20B00039CFAC</string>
 				<string>1C9437FF063B20B00039CFAC</string>
@@ -646,14 +605,11 @@
 	<integer>0</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D54069F1CE1000CFCEE</string>
 		<string>1C530D52069F1CE1000CFCEE</string>
-		<string>5C68D26712EE508B0037A095</string>
 		<string>5C68D28212EE54D50037A095</string>
 		<string>5C68D28712EE54D50037A095</string>
 		<string>/Users/mpattee/Documents/source/iPhone Programming/HypnoTime/HypnoTime.xcodeproj</string>
-		<string>1C530D5B069F1CE1000CFCEE</string>
-		<string>5C68D28C12EE54D50037A095</string>
+		<string>5C27F6DA12F133B600F97968</string>
 	</array>
 	<key>WindowString</key>
 	<string>2114 999 446 419 0 0 2560 1418 </string>
@@ -870,7 +826,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D52069F1CE1000CFCEE</string>
-				<string>5C27F4DB12EF3A5700F97968</string>
+				<string>5CB34F5612F21F6400E82043</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
