@@ -18,14 +18,7 @@
 	{
 	// Call the superclass's designated initializer
 	[super initWithStyle:UITableViewStyleGrouped];
-	
-	// Create an array of 10 random possession objects
-	possessions = [[NSMutableArray alloc] init];
-	for (int i = 0; i < 10; i++) 
-		{
-		[possessions addObject:[Possession randomPossession]];
-		}
-		
+			
 	// Set the nav bar to have the pre-fab'ed Edit button when ItemsViewController is on top of the stack
 	[[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
 	

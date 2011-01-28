@@ -17,6 +17,7 @@
 	}
 	
 - (NSString *)possessionArrayPath;
+- (void)archivePossessions;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 

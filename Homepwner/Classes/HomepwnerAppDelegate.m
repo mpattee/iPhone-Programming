@@ -17,14 +17,41 @@
 	{
 	return pathInDocumentDirectory(@"Posessions.data");
 	}
+	
+- (void)archivePossessions
+	{
+	// Get full path of possession archive
+	NSString *possessionPath = [self possessionArrayPath];
+	
+	// Get the possession list
+	NSMutableArray *possessionArray = [itemsViewController possessions];
+	
+	// Archive possessions list to file
+	[NSKeyedArchiver archiveRootObject:possessionArray toFile:possessionPath];
+	}
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions 
-	{    
+	{
+	// Get the full path of our possession archive file
+	NSString *possessionPath = [self possessionArrayPath];
+	
+	// Unarchive it into an array
+	NSMutableArray *possesionsArray = [NSKeyedUnarchiver unarchiveObjectWithFile:possessionPath];
+	
+	// if the file did not exist our possesion arrawy will not either
+	
+	// create on in its absence
+	if (!possesionsArray) 
+		{
+		possesionsArray = [NSMutableArray array];
+		}
     // Create a ItemsViewController
 	itemsViewController = [[ItemsViewController alloc] init];
+	
+	[itemsViewController setPossessions:possesionsArray];
 	
 	// Create an instance of UInavigationController
 	// its stack contains only items viewcontroller
@@ -55,6 +82,8 @@
      Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
      If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
      */
+	 
+	 [self archivePossessions];
 }
 
 
@@ -77,6 +106,7 @@
      Called when the application is about to terminate.
      See also applicationDidEnterBackground:.
      */
+	 [self archivePossessions];
 }
 
 
