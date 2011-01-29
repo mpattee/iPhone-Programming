@@ -61,16 +61,44 @@ static ImageCache *sharedImageCache;
 - (void)setImage:(UIImage *)inImage forKey:(NSString *)inKey
 	{
 	[dictionary setObject:inImage forKey:inKey];
+	
+	// Create full path for image
+	NSString *imagePath = pathInDocumentDirectory(inKey);
+	
+	// Turn image into JPEG data
+	NSData *data = UIImageJPEGRepresentation(inImage, 0.5);
+	
+	// Write it to full path
+	[data writeToFile:imagePath atomically:YES];
 	}
 
 - (UIImage *)imageForKey:(NSString *)inKey
 	{
-	return [dictionary objectForKey:inKey];
+	// If Possible get it from the dictionary
+	UIImage *result = [dictionary objectForKey:inKey];
+	
+	if (!result)
+		{
+		// create UIImage object from file
+		result = [UIImage imageWithContentsOfFile:pathInDocumentDirectory(inKey)];
+		// If we found an image on the file system, place it into the cache
+		if (result) 
+			{
+			[dictionary setObject:result forKey:inKey];
+			}
+		else 
+			{
+			NSLog(@"Error : unable to find %@", pathInDocumentDirectory(inKey));
+			}
+	}
+	return result;
 	}
 
 - (void)deleteImageForKey:(NSString *)inKey
 	{
 	[dictionary removeObjectForKey:inKey];
+	NSString *path = pathInDocumentDirectory(inKey);
+	[[NSFileManager defaultManager] removeItemAtPath:path error:nil];
 	}
 
 @end
